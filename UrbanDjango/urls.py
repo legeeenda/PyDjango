@@ -19,7 +19,7 @@ from django.urls import path
 
 from task2.views import func, Cls
 from task3.views import main, cart, shop
-#from task4.views import cart, shop, main
+from task4.views import cart, shop, main
 #from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
@@ -29,15 +29,15 @@ urlpatterns = [
     path('cls/', Cls.as_view()),
     
     #task3
-    path('main/', main),
-    path('cart/', cart),
-    path('shop/', shop),
+    #path('main/', main),
+    #path('cart/', cart),
+    #path('shop/', shop),
 
 
     # task 4
-   # path('', main),
-   # path('shop', shop),
-   # path('cart', cart),
+    path('', main),
+    path('shop/', shop),
+    path('cart/', cart),
 
     # task 5
    # path('html', sign_up_by_html),
