@@ -20,7 +20,7 @@ from django.urls import path
 from task2.views import func, Cls
 from task3.views import main, cart, shop
 from task4.views import cart, shop, main
-#from task5.views import sign_up_by_html, sign_up_by_django
+from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
     # task 2
@@ -40,6 +40,6 @@ urlpatterns = [
     path('cart/', cart),
 
     # task 5
-   # path('html', sign_up_by_html),
-   # path('django', sign_up_by_django),
+    path('html', sign_up_by_html),
+    path('django', sign_up_by_django),
 ]
